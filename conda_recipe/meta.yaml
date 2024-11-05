@@ -1,0 +1,28 @@
+package:
+  name: reactangular-prism-viewer
+  version: "0.1.0"
+
+source:
+  path: ..
+
+build:
+    script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
+
+requirements:
+  build:
+    - python ==3.10
+    - pip
+  host:
+    - python ==3.10
+    - pip
+  run:
+    - python ==3.10
+    - numpy >=1.21.2
+    - pyqt >=5.15.10
+    - conda-forge::pythonocc-core
+
+about:
+  home: "https://github.com/OsdagScreeningTasks/RectangularPrismViewer"
+  summary: "A PyQt5 desktop application that allows users to view and analyze 3D models of rectangular prisms."
+  description: |
+    This project involves creating a desktop application using PyQt5 that allows users to view and analyze 3D models of rectangular prisms. The application retrieves prism dimensions from a SQLite database, calculates surface area and volume, and displays a 3D CAD model using PythonOCC.
