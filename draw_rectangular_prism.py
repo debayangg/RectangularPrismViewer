@@ -17,8 +17,10 @@ def display_prism(box):
     # Display the box
     display.DisplayShape(box, update=True)
 
-    # Start the display loop
+    # Start the display loop and wait until the window is manually closed
+    display.FitAll()
     start_display()
+
 
 
 if __name__ == "__main__":

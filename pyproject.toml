@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reactangular-prism-viewer"
+version = "0.1.0"
+description = "This project involves creating a desktop application using PyQt5 that allows users to view and analyze 3D models of rectangular prisms. The application retrieves prism dimensions from a SQLite database, calculates surface area and volume, and displays a 3D CAD model using PythonOCC. "
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = [
+    "numpy>=2.1.2",
+    "PyQt5>=5.15.11",
+    "PyQt5-Qt5>=5.15.2",
+    "PyQt5_sip>=12.15.0",
+]
+
+[project.urls]
+Source = "https://github.com/OsdagScreeningTasks/RectangularPrismViewer"
+
